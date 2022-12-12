@@ -12,6 +12,20 @@ p{
   margin: 0;
   padding: 0;
 }
+
+.change_lang {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400px;
+  font-style: normal;
+  line-height: 20px;
+  color: #696969;
+  text-decoration: none;
+
+  
+}
+
 .header {
   padding: 50px 0;
   width: 100%;
@@ -56,14 +70,6 @@ p{
   text-align: left;
   color: #696969;
 
-}
-.navbar .header_ru{
-  font-size: 16px;
-  font-weight: 400px;
-  font-style: normal;
-  line-height: 20px;
-  color: #696969;
-  text-decoration: none;
 }
 
 .list_menu {
@@ -118,8 +124,17 @@ p{
   position: absolute;
   bottom: 30px;
 }
-
-
+.navbar_symbols div {
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  background: url(../pictures/Ellipse\ 17.png) center / cover;
+}
+.navbar_symbols div img {
+  object-fit: cover;
+  width: fit-content;
+}
 @media(max-width:968px){
   
   .header {
@@ -166,14 +181,13 @@ ul{
   }
   .navbar_list {
     position: fixed;
-    left: -100%;
-    top: 0;
+    right: -100%;
     gap: 0;
     flex-direction: column;
     background-color: #1733B8;
     width: 100%;
     min-height: 100vh;
-    align-items: flex-start;
+    align-items: center;
     transition: 0.3s ;
   }
   .navbar_list a {
@@ -181,9 +195,9 @@ ul{
   }
   .list_menu {
     padding: 20px 15%;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 15px;
+    margin-top: 8px;
   }
 
   .second_content {
@@ -208,7 +222,7 @@ ul{
   }
 
   .navbar_list.active {
-    left: 0;
+    right: 0;
   }
 }
 
