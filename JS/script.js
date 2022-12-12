@@ -6,26 +6,26 @@ hamburger.addEventListener("click", () => {
   listMenu.classList.toggle("active")
 })
 
-// const imageData = [
-//   {
-//     id:1,
-//   }
-// ]
+const imageData = [
+  {
+    id:1,
+  }
+]
 
-// window.addEventListener("load", () => {
-//   ellipseCard(imageData)
-// })
+window.addEventListener("load", () => {
+  ellipseCard(imageData)
+})
 
 
-// const symbols = document.querySelector(".navbar_symbols");
-// function ellipseCard(base){
-//   const template = base.map((image) => {
-//     return `
+const symbols = document.querySelector(".navbar_symbols");
+function ellipseCard(base){
+  const template = base.map((image) => {
+    return `
 
-//       <img src=${image} />
+      <img src=${image} />
     
-//     `
-//   }).join(" ")
+    `
+  }).join(" ")
 
-//   symbols.innerHTML = template
-// }
+  symbols.innerHTML = template
+}
